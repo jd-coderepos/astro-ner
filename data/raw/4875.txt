@@ -1,0 +1,1 @@
+Solving the q ˆ puzzle with x and scale dependence
