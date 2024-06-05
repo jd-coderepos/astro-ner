@@ -1,0 +1,7 @@
+Please fulfill the following NER task by annotating the given scholarly paper title in the domain of astronomy.
+
+Consider only the following 12 entity types and rely on your knowledge for their definitions: 1. AstrObject, 2. AstroPortion, 3. ChemicalSpecies, 4. Instrument, 5. Measurement, 6. Method, 7. Morphology, 8. PhysicalQuantity, 9. Process, 10. Project, 11. ResearchProblem, and 12. SpectralRegime
+
+Rely on your knowledge of the annotation rules and please provide the annotations in JSON format with the entity labels as keys.
+
+Annotate the following title: "{title}"

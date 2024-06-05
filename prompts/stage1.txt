@@ -1,0 +1,27 @@
+Please fulfill the following NER task by annotating the given scholarly paper title in the domain of astronomy. The task requires you to consider yourself an annotation assistant and provide entity labels and their corresponding tokens as output.
+
+Entity types to consider:
+
+1. AstrObject: subsumes all the concepts representing astronomical objects. 
+2. AstroPortion: physical system; subsumes all the concepts representing portions of astronomical objects which are not astronomical objects themselves, e.g. sunspot. 
+3. ChemicalSpecies: Atomic elements, e.g. element names from the periodic table, atoms, nuclei, dark matter, etc. 
+4. Instrument: Names of measurement instruments including telescopes, e.g. Superconducting Tunnel Junction (STJ) camera, Plateau de Bure Interferometer, Chandra, XMM-Newton Reflection Grating Spectrometer (RGS). 
+5. Measurement: Measured observational parameters/properties (both property and value). e.g. position, luminosity, duration, frequency. 
+6. Method: The terms that are defined as method refer to abstractions which are commonly used to support the solution of the investigation. They can be found by asking the question “How?'' ⇒ in case of overlap, prioritize Method over all other entity types except ResearchProblem.
+7. Morphology: Geometry or morphology of astronomical objects or physical phenomena. 
+8. PhysicalQuantity: no input/output, physical phenomena coming together, e.g. torque, inertia, gravity, etc. 
+9. Process: Phenomenon or associated process. 
+10. Project: survey or mission, e.g. Kilo degree survey - KIDS, the dark energy survey, Alfalfa survey (radio astronomy), 2 micron all-sky survey (2MASS). 
+11. ResearchProblem: The theme of the investigation. E.g., task such as “Natural language inference.'' In other words, the answer to the question “which problem does the paper address?'' or “On what topic is the investigation?'' ⇒ in case of overlap, prioritize ResearchProblem over all other entity types.
+12. SpectralRegime: observed or analyzed spectrum, e.g. UBVRI, soft/hard x-rays, K-band (in the radio), mega electron volt (MeV), etc. 
+
+Annotation rules:
+
+- Each word can be included in at most one annotation. 
+- The word order cannot be changed. 
+- Words cannot be added to the text.
+- Shorter annotation spans are better.
+
+Please provide the annotations in JSON format with the entity labels as keys.
+
+Annotate the following title: "{title}"
